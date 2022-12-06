@@ -18,5 +18,8 @@ pip install -U pip && pip install django dj-database-url python-decouple django-
 pip freeze > requirements.txt
 pip install -r requirements.txt
 python contrib/env_gen.py
+django-admin startproject myproject .
+cd myproject
+manage.py startapp core
 python manage.py migrate
 ```
